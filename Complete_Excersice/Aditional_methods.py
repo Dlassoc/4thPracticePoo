@@ -25,6 +25,6 @@ class Curso:
         for estudiante in self.estudiantes:
             notas.append(estudiante.nota)
             suma += estudiante.nota
-        suma = suma/len(notas)
-        return suma
+        mediana = suma/len(notas)
+        return mediana
 

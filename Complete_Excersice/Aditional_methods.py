@@ -4,13 +4,6 @@ class Estudiante:
         self.nombre = nombre
         self.nota = nota
 
-    def califications_to_0(self, nota):
-        list_notes = [nota]
-        for i in list_notes:
-            if self.nota >= 3.0:
-                break
-            else:
-                self.nota = 0
 
 class Curso:
     def __init__(self):
@@ -19,3 +12,9 @@ class Curso:
     def agregar_estudiante(self, id, nombre, nota):
         self.estudiantes.append(Estudiante(id, nombre, nota))
 
+    def notas_a_cero(self):
+        for estudiante in self.estudiantes:
+            if estudiante.nota > 3.0:
+                break
+            else:
+                estudiante.nota = 0.0

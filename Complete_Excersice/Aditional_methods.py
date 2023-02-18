@@ -28,3 +28,4 @@ class Curso:
         mediana = suma/len(notas)
         return mediana
 
+

@@ -1,0 +1,3 @@
+#Requerminets:
+#Método notas_a_cero: este método debe reemplazar todas las notas del curso por 0, hasta que aparezca la primera nota superior a 3.0.
+#Método nota_mediana: este método debe calcular y retorna una nota del curso (si hay varias que lo cumplan puede retornar cualquiera) tal que la mitad de las notas sean menores o iguales a ella.

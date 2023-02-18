@@ -18,3 +18,13 @@ class Curso:
                 break
             else:
                 estudiante.nota = 0.0
+
+    def nota_mediana(self, nota):
+        suma = 0
+        notas = []
+        for estudiante in self.estudiantes:
+            notas.append(estudiante.nota)
+            suma += estudiante.nota
+        suma = suma/len(notas)
+        return suma
+
